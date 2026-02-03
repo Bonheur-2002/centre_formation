@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accueil - Centre de Formation</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d7ff2",
+                        "accent": "#f2920d",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white transition-colors duration-300">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-[#f0f2f5] dark:border-gray-800 px-6 lg:px-20 py-4">
+<div class="max-w-[1280px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined">school</span>
+</div>
+<h2 class="text-[#111418] dark:text-white text-xl font-bold leading-tight tracking-tight">SupFormation</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Formations</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">À Propos</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Entreprises</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-[#f0f2f5] dark:bg-gray-800 rounded-lg px-3 py-1.5">
+<span class="material-symbols-outlined text-[#60758a] text-lg">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-40 placeholder:text-[#60758a]" placeholder="Rechercher..."/>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-lg text-sm font-bold transition-all">
+                    Connexion
+                </button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-20 py-12 lg:py-20">
+<div class="flex flex-col lg:flex-row items-center gap-12">
+<div class="flex-1 flex flex-col gap-8 text-left">
+<div class="flex flex-col gap-4">
+<span class="text-primary font-bold tracking-widest text-xs uppercase">Boostez votre avenir</span>
+<h1 class="text-4xl lg:text-6xl font-black leading-[1.1] tracking-tight text-[#111418] dark:text-white">
+                            Propulsez votre carrière avec nos <span class="text-primary">formations</span> certifiantes.
+                        </h1>
+<p class="text-[#60758a] dark:text-gray-400 text-lg leading-relaxed max-w-[600px]">
+                            Le pont entre la théorie académique et la pratique professionnelle. Rejoignez 15,000+ diplômés et apprenez auprès des meilleurs experts du secteur.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-bold text-base shadow-lg shadow-primary/20 transition-all flex items-center gap-2">
+                            Voir les formations
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-white dark:bg-gray-800 border-2 border-[#f0f2f5] dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 px-8 py-4 rounded-xl font-bold text-base transition-all">
+                            S'inscrire gratuitement
+                        </button>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="aspect-square bg-gradient-to-tr from-primary/10 to-accent/10 rounded-3xl overflow-hidden relative">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover" data-alt="Students collaborating around a laptop in a modern classroom" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBuI-dYzY7n-6hRWSu4sZ4L-p7WKViCBl98fSDucQ_vkpAboGDxKPrNqY6WTj_uNf_jRU58HHcSAw1o4eWXV3RaBV4_KewNy1wZ-Yznx4SYH9jWL_sHbL-MZdQLEu-ZX4QLzWxEJYwJU7R5m8bN5Lr02h50g-MRZpIJZ5Uum0BQERdOeIJyxBhdA2BW1b8OkmKxTP-IuMZoIrR8rCcJpQC2HTm0sFOshsVtp0bOQw66pHb9dC44nZ_aH10l6eAGvagORqiu9t7L");'>
+</div>
+</div>
+<!-- Floating Stat Card -->
+<div class="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-xl border border-[#f0f2f5] dark:border-gray-700 hidden sm:block">
+<div class="flex items-center gap-4">
+<div class="size-12 rounded-full bg-accent/20 flex items-center justify-center text-accent">
+<span class="material-symbols-outlined font-bold">star</span>
+</div>
+<div>
+<p class="text-2xl font-bold">4.9/5</p>
+<p class="text-xs text-[#60758a] dark:text-gray-400">Note moyenne des apprenants</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats / Trust Bar -->
+<section class="bg-white dark:bg-background-dark/50 border-y border-[#f0f2f5] dark:border-gray-800 py-10">
+<div class="max-w-[1280px] mx-auto px-6 lg:px-20">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col items-center md:items-start">
+<p class="text-3xl font-black text-primary">98%</p>
+<p class="text-sm font-medium text-[#60758a] dark:text-gray-400">Taux de réussite</p>
+</div>
+<div class="flex flex-col items-center md:items-start">
+<p class="text-3xl font-black text-primary">1500+</p>
+<p class="text-sm font-medium text-[#60758a] dark:text-gray-400">Professionnels formés</p>
+</div>
+<div class="flex flex-col items-center md:items-start">
+<p class="text-3xl font-black text-primary">50+</p>
+<p class="text-sm font-medium text-[#60758a] dark:text-gray-400">Entreprises partenaires</p>
+</div>
+<div class="flex flex-col items-center md:items-start">
+<p class="text-3xl font-black text-primary">120</p>
+<p class="text-sm font-medium text-[#60758a] dark:text-gray-400">Modules experts</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Presentation Section -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-20 py-20">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="flex-1 order-2 lg:order-1">
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 hover:border-primary/30 transition-all flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+<h3 class="font-bold text-lg">Certification Reconnue</h3>
+<p class="text-sm text-[#60758a] leading-relaxed">Obtenez un diplôme certifié par l'État pour booster durablement votre employabilité.</p>
+</div>
+<div class="bg-accent/5 p-8 rounded-2xl border border-accent/10 hover:border-accent/30 transition-all flex flex-col gap-4">
+<span class="material-symbols-outlined text-accent text-3xl">psychology</span>
+<h3 class="font-bold text-lg">Mentors Experts</h3>
+<p class="text-sm text-[#60758a] leading-relaxed">Apprenez auprès de leaders en poste dans les plus grandes entreprises internationales.</p>
+</div>
+<div class="bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl border border-transparent hover:border-gray-300 dark:hover:border-gray-600 transition-all flex flex-col gap-4">
+<span class="material-symbols-outlined text-[#111418] dark:text-white text-3xl">schedule</span>
+<h3 class="font-bold text-lg">Flexibilité Totale</h3>
+<p class="text-sm text-[#60758a] leading-relaxed">Formations à temps plein ou partiel, 100% en ligne ou en présentiel.</p>
+</div>
+<div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 hover:border-primary/30 transition-all flex flex-col gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+<h3 class="font-bold text-lg">Accès Réseau</h3>
+<p class="text-sm text-[#60758a] leading-relaxed">Connectez-vous avec nos 50+ partenaires pour votre futur stage ou emploi.</p>
+</div>
+</div>
+</div>
+<div class="flex-1 order-1 lg:order-2 flex flex-col gap-6">
+<h2 class="text-3xl lg:text-4xl font-bold leading-tight">Une approche pédagogique axée sur les <span class="text-accent underline decoration-4 underline-offset-8">compétences réelles</span>.</h2>
+<p class="text-[#60758a] dark:text-gray-400 text-lg">
+                        Nous ne nous contentons pas d'enseigner la théorie. Notre méthode est basée sur des projets concrets, des études de cas réelles et un accompagnement personnalisé vers l'emploi. 
+                    </p>
+<div class="flex flex-col gap-4 pt-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<p class="text-sm font-medium">Contenu mis à jour chaque trimestre</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<p class="text-sm font-medium">Support pédagogique disponible 7j/7</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+<p class="text-sm font-medium">Accès à vie à la communauté des anciens</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Popular Courses Grid -->
+<section class="bg-[#f8fafc] dark:bg-gray-900/50 py-20">
+<div class="max-w-[1280px] mx-auto px-6 lg:px-20">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
+<div class="flex flex-col gap-3">
+<h2 class="text-3xl font-bold tracking-tight">Nos Formations Populaires</h2>
+<p class="text-[#60758a] dark:text-gray-400">Les compétences les plus demandées sur le marché en 2024.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                        Toutes les formations <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Course Card 1 -->
+<div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700 group">
+<div class="aspect-video relative overflow-hidden">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close up of a screen displaying data analytics charts and graphs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjJQhf-ZSl2IES2myFOAywqHaiI69_ytOb9VgTPOXe3KH1FgOKn7bDkDITCVvH3jjmEi2eX7AjgxbtstROnbkUcD6d7KKgQM9IKIAjN8JFgCCP4u5TYS-z8koZF_X4n7G5qe38lqiiiAs3drYCmq7345CP0tse7Gwk4AkT1hi507yUdTtqWue9LK5KsWjfBevshxCl3C2Xb5gbjMswI-rLbQ94PM0cMxwBtcMt0L6hfkJXfR8GgA_aT0jUpOBxBoQWklZuH9uk");'>
+</div>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Data Science</span>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-4">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Data Analyst Expert</h3>
+<p class="text-[#60758a] dark:text-gray-400 text-sm line-clamp-2">Maîtrisez Python, SQL et Tableau pour transformer les données en décisions stratégiques.</p>
+<div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
+<div class="flex items-center gap-2 text-sm text-[#60758a] dark:text-gray-400">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>6 mois</span>
+</div>
+<div class="flex items-center gap-1 text-sm font-bold text-[#111418] dark:text-white">
+<span class="material-symbols-outlined text-accent text-sm filled">stars</span>
+<span>Certifié</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Course Card 2 -->
+<div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700 group">
+<div class="aspect-video relative overflow-hidden">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Digital marketing strategy session with laptop and coffee" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPUxl6MJC6l94xx5qVt23P9YSx9IM_dhMWZnYdPk8xadvq8_ljghi4IfOvK7mcH5HviDJzU2qOSt3B3uhar5Vqc4AXdgUg1gztR6HL_vGZ2FMpzVmOCkXVZbGv918vzwFIaTImqWLyMHxDuuowcZVFXPX3tJ8hkY6ML40WfogGUmVl-6XjLW91xm4P1OKq-4_qSaO-mg47plm3BIiyGwI73yjFxoycqmP4Szpcwy3GYK6BYTTJgVdieRiR-_qct1_c4Z8P3uF6");'>
+</div>
+<div class="absolute top-4 left-4">
+<span class="bg-accent text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Marketing</span>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-4">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Growth &amp; Digital Marketing</h3>
+<p class="text-[#60758a] dark:text-gray-400 text-sm line-clamp-2">Devenez un expert du SEO, des Ads et de l'acquisition client pour faire exploser votre business.</p>
+<div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
+<div class="flex items-center gap-2 text-sm text-[#60758a] dark:text-gray-400">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>3 mois</span>
+</div>
+<div class="flex items-center gap-1 text-sm font-bold text-[#111418] dark:text-white">
+<span class="material-symbols-outlined text-accent text-sm">stars</span>
+<span>Accrédité</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Course Card 3 -->
+<div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700 group">
+<div class="aspect-video relative overflow-hidden">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Team leader guiding professional development session" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDS2KAj6T7ToKbCT1US9Ri14UlcwVqZt31GCVkYDfOXQvUNCgU_S12k1N9kUN-U-iG9NHA8Lsu52W0KUy3RSQzksZDKkoMN29aplmk42ALdQ5cTYODD2k8HjeuS_D8BMN2uQ_nrSAzz82P_dDFSgFuISoF2YClCq6BS2A1tPi02BoHc3F5us5LRRTfeXZJhRcdKTVlewAwTGNCADOmwbUmtpIpzjXsa4dQIgmPHiv7OtMTkzelKWTUpUjaVmpTMpESS2zNUm5Rh");'>
+</div>
+<div class="absolute top-4 left-4">
+<span class="bg-purple-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Management</span>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-4">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Executive Leadership</h3>
+<p class="text-[#60758a] dark:text-gray-400 text-sm line-clamp-2">Développez votre intelligence émotionnelle et vos capacités de gestion d'équipe de haut niveau.</p>
+<div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
+<div class="flex items-center gap-2 text-sm text-[#60758a] dark:text-gray-400">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>4 mois</span>
+</div>
+<div class="flex items-center gap-1 text-sm font-bold text-[#111418] dark:text-white">
+<span class="material-symbols-outlined text-accent text-sm">stars</span>
+<span>Certifié</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Enrollment Section -->
+<section class="py-20 max-w-[1280px] mx-auto px-6 lg:px-20">
+<div class="bg-primary rounded-[2rem] p-12 lg:p-20 relative overflow-hidden shadow-2xl shadow-primary/30">
+<!-- Abstract background shapes -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-accent/20 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+<div class="relative z-10 flex flex-col items-center text-center gap-8 max-w-[800px] mx-auto">
+<h2 class="text-white text-4xl lg:text-5xl font-black leading-tight">
+                        Prêt à donner un nouvel élan à votre carrière ?
+                    </h2>
+<p class="text-white/80 text-lg leading-relaxed">
+                        Inscrivez-vous dès aujourd'hui pour bénéficier d'un entretien d'orientation gratuit avec l'un de nos conseillers pédagogiques.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 w-full justify-center mt-4">
+<button class="bg-accent hover:bg-accent/90 text-white px-10 py-5 rounded-2xl font-black text-lg transition-all shadow-xl shadow-black/10">
+                            Commencer l'inscription
+                        </button>
+<button class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-10 py-5 rounded-2xl font-bold text-lg transition-all">
+                            Télécharger la brochure
+                        </button>
+</div>
+<p class="text-white/60 text-xs mt-4">
+                        * Inscription sans engagement. Places limitées par session.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-[#f0f2f5] dark:border-gray-800 pt-20 pb-10">
+<div class="max-w-[1280px] mx-auto px-6 lg:px-20">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined">school</span>
+</div>
+<h2 class="text-xl font-bold">SupFormation</h2>
+</div>
+<p class="text-[#60758a] text-sm leading-relaxed">
+                        L'excellence de la formation au service de votre réussite professionnelle. Certifié Qualiopi.
+                    </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-[#f0f2f5] dark:bg-gray-800 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="size-10 rounded-full bg-[#f0f2f5] dark:bg-gray-800 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">share</span>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-bold">Formations</h4>
+<ul class="flex flex-col gap-3 text-sm text-[#60758a] dark:text-gray-400">
+<li><a class="hover:text-primary" href="#">Data Science &amp; AI</a></li>
+<li><a class="hover:text-primary" href="#">Marketing Digital</a></li>
+<li><a class="hover:text-primary" href="#">Management &amp; Leadership</a></li>
+<li><a class="hover:text-primary" href="#">Design &amp; UX/UI</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-bold">Centre</h4>
+<ul class="flex flex-col gap-3 text-sm text-[#60758a] dark:text-gray-400">
+<li><a class="hover:text-primary" href="#">À propos de nous</a></li>
+<li><a class="hover:text-primary" href="#">Notre équipe</a></li>
+<li><a class="hover:text-primary" href="#">Offres d'emploi</a></li>
+<li><a class="hover:text-primary" href="#">Blog</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-bold">Contact</h4>
+<ul class="flex flex-col gap-3 text-sm text-[#60758a] dark:text-gray-400">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">mail</span>
+                            contact@supformation.fr
+                        </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">call</span>
+                            +33 (0)1 23 45 67 89
+                        </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                            75008 Paris, France
+                        </li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-[#f0f2f5] dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#60758a]">
+<p>© 2024 SupFormation Center. Tous droits réservés.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Mentions Légales</a>
+<a class="hover:text-primary" href="#">Politique de Confidentialité</a>
+<a class="hover:text-primary" href="#">CGU</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
